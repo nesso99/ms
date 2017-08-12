@@ -69,8 +69,8 @@ func TestCaseIntensitive(t *testing.T) {
 	}
 }
 
-func TestRound2MS(t *testing.T) {
-	x := ParseMs("1.5ms")
+func TestStartWithDot(t *testing.T) {
+	x := ParseMs(".5ms")
 	if x != 1 {
 		t.Errorf("MS was incorrect, got: %d, want: %d.", x, 1)
 	}

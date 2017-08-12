@@ -83,7 +83,7 @@ func process(val string) int64 {
 	case "seconds", "second", "secs", "sec", "s":
 		return int64(n * float64(s))
 	case "milliseconds", "millisecond", "msecs", "msec", "ms":
-		return int64(n)
+		return Round(n)
 	default:
 		return 0
 	}
